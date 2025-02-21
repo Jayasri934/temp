@@ -217,6 +217,35 @@
           } name="gender" onclick="togglePronoun()" /></div>
         </div>
       </div>
+      <div class="row" style="justify-content: start">
+        <div class="leftCaption">
+          interests<span class="qMark"
+            ><abbr title="Click for more information">?</abbr></span
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="radioClass">
+          <div><label>Reading</label></div>
+          <div><input type="checkbox" ${
+            g === "Female" && "checked"
+          } name="gender" onclick="togglePronoun()" /></div>
+        </div>
+        <div class="radioClass">
+          <div><label>Travelling</label></div>
+          <div><input type="checkbox" ${
+            g === "Male" && "checked"
+          } name="gender" onclick="togglePronoun()" /></div>
+        </div>
+        <div class="radioClass">
+          <div><label>Watching</label></div>
+          <div><input type="checkbox" ${
+            pronoun != "NA" && "checked"
+          } name="gender" onclick="togglePronoun()" /></div>
+        </div>
+      </div>
+
 
      <div class="row">
       <select id="prSelect" style="display:none">
